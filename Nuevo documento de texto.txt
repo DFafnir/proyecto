@@ -1,0 +1,209 @@
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Administrador/Downloads/proyect 8/.git/
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git add .
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git commit -m "primer commit"
+[master (root-commit) ff114fd] primer commit
+ 2 files changed, 33 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git remote add origin https://github.com/DFafnir/proyecto.git
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 888 bytes | 888.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DFafnir/proyecto.git
+ * [new branch]      master -> master
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git mkdir "mi nuevo proyecto
+> "
+git: 'mkdir' is not a git command. See 'git --help'.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ mkdir "mi nuevo proyecto"
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ cd mi-nuevo-proyecto
+bash: cd: mi-nuevo-proyecto: No such file or directory
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ cd mi_nuevo_proyecto
+bash: cd: mi_nuevo_proyecto: No such file or directory
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git cd "mi_nuevo_proyecto
+> "
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git cd "mi_nuevo_proyecto"
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ git cd "mi-nuevo-proyecto"
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ cd "mi-nuevo-proyecto"
+bash: cd: mi-nuevo-proyecto: No such file or directory
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8 (master)
+$ cd "mi nuevo proyecto"
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ git init
+Initialized empty Git repository in C:/Users/Administrador/Downloads/proyect 8/mi nuevo proyecto/.git/
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ touch README.md
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ git commit -m "inicial"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ git add .
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ git commit -m "inicial"
+[master (root-commit) d6ebb29] inicial
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (master)
+$ git checkout -b "dev"
+Switched to a new branch 'dev'
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ touch index.html
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git add .
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git commit -m "inicial"
+[dev dfaf653] inicial
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push origin dev
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push  dev
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream dev dev
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push -u origin dev
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git commit -m "actualizacion"
+On branch dev
+nothing to commit, working tree clean
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git add .
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git commit -m "actualizacion"
+On branch dev
+nothing to commit, working tree clean
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push -u origin dev
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ ^[[200~git remote -v~
+bash: $'\E[200~git': command not found
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git remote -v
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git remote add origion https://github.com/DFafnir/proyecto.git
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git remote -v
+origion https://github.com/DFafnir/proyecto.git (fetch)
+origion https://github.com/DFafnir/proyecto.git (push)
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git push -u origin dev
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$ git remote -v
+origion https://github.com/DFafnir/proyecto.git (fetch)
+origion https://github.com/DFafnir/proyecto.git (push)
+
+Administrador@CW-TRADING MINGW64 ~/Downloads/proyect 8/mi nuevo proyecto (dev)
+$
